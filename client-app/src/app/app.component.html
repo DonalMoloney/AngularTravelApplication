@@ -4,7 +4,7 @@
 <sui-tabset>
     <div class="ui top attached tabular menu">
         <a class="item" suiTabHeader="1">Home - Página de inicio</a>
-        <a class="item" suiTabHeader="2">Planning - Plan de viaje</a>
+        <a class="item" suiTabHeader="2">Planning - Plan de Viaje</a>
         <a class="item" suiTabHeader="3">Third</a>
     </div>
       <div class="ui bottom attached segment" suiTabContent="1">
@@ -52,11 +52,72 @@
         </div>
         </div>
         <div class="ui vertical divider">
-          <!-- Add image banner maybe spanish flag -->
+          <i class="spain flag"></i>
         </div>
       </div>
 
     </div>
-    <div class="ui bottom attached segment" suiTabContent="2">Second Page</div>
+    <div class="ui bottom attached segment" suiTabContent="2">
+
+      <h1 class="ui header">Planning Stage! - ¡Bienvenido a Travel Spain!</h1>
+      <h2 class="ui header">How to Begin? - Como empezar?</h2>
+
+      <!-- Tells them how to interact with the map -->
+      <div class="ui segment">
+        <div class="ui two column very relaxed grid">
+          <div class="column">
+            <p>Lorem ipsum dolor sit amet, ea nonumy doctus ius. Elitr facilisi
+               adolescens nec in. Id eos quidam veritus deterruisset.
+                Te enim viderer cum, cum volumus lobortis an.
+            </p>
+          </div>
+        <div class="column">
+          <p>Sed tota inani facete no. Utroque invidunt ea eos, usu bonorum
+             vivendum ad. Corrumpit constituto ei duo. An eos erant latine.
+              Mei nostro erroribus in.
+          </p>
+        </div>
+        </div>
+        <div class="ui vertical divider">
+          <i class="spain flag"></i>
+        </div>
+      </div>
+
+      <div>
+        <!-- Depending on the button this will be sent to the angular querry that will talk to the express back end -->
+        <div class="ui seven item menu">
+          <a class="item">Trip 1</a>
+          <a class="item">Trip 2</a>
+          <a class="item">Trip 3</a>
+          <a class="item">Trip 4</a>
+          <a class="item">Trip 5</a>
+          <a class="item">Clear</a>
+          <a class="item">Create Custom Trip</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Basic Modal allows them to create a combination of four cities -->
+    <div class="ui modal">
+      <div class="header">Create Custom Trip</div>
+      <div class="ui 4 item menu">
+        <a class="item">City 1</a>
+        <a class="item">City 2</a>
+        <a class="item">City 3</a>
+        <a class="item">City 4</a>
+      </div>
+      <div class="image content">
+        <img class="image">
+        <div class="description">
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Either print the icon or save it as a pdfs -->
+    <i class="print icon"></i>
+    <i class="file pdf icon"></i>
     <div class="ui bottom attached segment" suiTabContent="3">Third Page</div>
+
+
 </sui-tabset>
