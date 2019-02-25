@@ -1,5 +1,10 @@
 <div style="text-align:center">
-  <!-- Add image banner -->
+  <div class="container">
+    <img src={{background_img}} alt="Barcelona Skyline" style="width:100%;">
+    <div class="bottom-left">
+      Spain App
+    </div>
+  </div>
 </div>
 <sui-tabset>
     <div class="ui top attached tabular menu">
@@ -106,6 +111,9 @@
         <a class="item">City 3</a>
         <a class="item">City 4</a>
       </div>
+
+      <div id="googleMap" style="width:100%;height:400px;"></div>
+
       <div class="image content">
         <img class="image">
         <div class="description">
@@ -117,7 +125,26 @@
     <!-- Either print the icon or save it as a pdfs -->
     <i class="print icon"></i>
     <i class="file pdf icon"></i>
-    <div class="ui bottom attached segment" suiTabContent="3">Third Page</div>
+    <div class="ui bottom attached segment" suiTabContent="3">
+      <h1 class="ui header">Currency Conversion - Conversión de Moneda</h1>
+      <h2 class="ui header">Choose a currency to convert to euros - Seleccione una moneda para convertir a euros</h2>
 
+      <div>
+        <p> Popular Options </p>
+        <!-- Depending on the button this will be sent to the angular querry that will talk to the express back end -->
+        <div class="ui four item menu">
+          <a class="item">British Pound</a>
+          <a class="item">American Doller</a>
+          <a class="item">Japanese Yen</a>
+          <a class="item">Chinese Renminbi</a>
+        </div>
+        <!-- Add drop down for other -->
+      </div>
+
+      <!-- Add thing for input boxes to convert into euro -->
+
+      <!-- Add graph to show performance over the last few days -->
+
+    </div>
 
 </sui-tabset>
