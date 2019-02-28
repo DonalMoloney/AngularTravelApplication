@@ -91,15 +91,17 @@
       <div>
         <!-- Depending on the button this will be sent to the angular querry that will talk to the express back end -->
         <div class="ui seven item menu">
-          <a class="item">Trip 1</a>
-          <a class="item">Trip 2</a>
-          <a class="item">Trip 3</a>
-          <a class="item">Trip 4</a>
-          <a class="item">Trip 5</a>
-          <a class="item">Clear</a>
-          <a class="item">Create Custom Trip</a>
+          <a id="barcelona" class="item" (click)="makeRequest('b')">Barcelona</a>
+          <a id="madrid" class="item" (click)="makeRequest('m')">Madrid</a>
+          <a id="valencia" class="item" (click)="makeRequest('v')">Valencia</a>
+          <a id="southSpain" class="item" (click)="makeRequest('ss')">South Spain</a>
+          <a id="makeRequest" class="item" (click)="makeRequest('ns')">North Spain</a>
+          <a class="item" (click)="clearScreen()">Clear</a>
+          <a class="item" (click)="customTripModal()">Create Custom Trip</a>
         </div>
       </div>
+      <div id="googleMap" style="width:750px;height:630px;"></div>
+
     </div>
 
     <!-- Basic Modal allows them to create a combination of four cities -->
@@ -111,9 +113,6 @@
         <a class="item">City 3</a>
         <a class="item">City 4</a>
       </div>
-
-      <div id="googleMap" style="width:100%;height:400px;"></div>
-
       <div class="image content">
         <img class="image">
         <div class="description">
@@ -132,17 +131,67 @@
       <div>
         <p> Popular Options </p>
         <!-- Depending on the button this will be sent to the angular querry that will talk to the express back end -->
+
+        <!-- When clicked add it to param  -->
+
         <div class="ui four item menu">
-          <a class="item">British Pound</a>
-          <a class="item">American Doller</a>
-          <a class="item">Japanese Yen</a>
-          <a class="item">Chinese Renminbi</a>
+          <a class="item" (click)="setStartingCurrecy('GBP')">British Pound</a>
+          <a class="item" (click)="setStartingCurrecy('USD')">American Doller</a>
+          <a class="item" (click)="setStartingCurrecy('JPY')">Japanese Yen</a>
+          <a class="item" (click)="setStartingCurrecy('CNY')">Chinese Renminbi</a>
         </div>
-        <!-- Add drop down for other -->
+        <!-- Add drop down for other to do ng repeat for all the values in it  -->
       </div>
 
       <!-- Add thing for input boxes to convert into euro -->
+      <div class="ui segment">
 
+        <div class="ui two column very relaxed grid">
+          <!-- todo make inline-->
+          <div class="column">
+            <div class="currency_conversion_box">
+              <div class="ui input">
+                <input id="start_currency" type="text" placeholder="ex: GBR...">
+              </div>
+              <p></p>
+              <div class="ui input">
+                <input id="start_amount" type="text" placeholder="ex: 12.00">
+              </div>
+              <div class="ui buttons">
+                <!-- TODO make it so that it can increase ever time button is clicked -->
+                <button (click)="increase_or_decrease('+')" class="ui icon button">
+                  <i class="plus icon"></i>
+                </button>
+                <div class="or"></div>
+                <button (click)="increase_or_decrease('-')" class="ui icon button">
+                  <i class="minus icon"></i>
+                </button>
+
+              </div>
+              <!-- Add handler  -->
+
+              <button (click)="convertToEuros()" class="ui labeled icon button">
+                <i class="euro sign icon"></i>
+                  Convert
+              </button>
+              </div>
+          </div>
+          <!--  -->
+
+            <!-- Give it a class id so that it can be positioned in the center -->
+              <div class="column">
+                <div class="tag_center">
+                  <div class="ui input">
+                    <!-- Set to hidden if blank or set to not editable-->
+                    <input id="amount_euros" class="tag_center" type="text" placeholder="Amount in Euros...">
+                  </div>
+                </div>
+              </div>
+            </div>
+        <div class="ui vertical divider">
+          in Euros is
+        </div>
+    </div>
       <!-- Add graph to show performance over the last few days -->
 
     </div>

@@ -1,0 +1,25 @@
+{
+    "locations": [
+      "1": {
+      "name": "Seville",
+      "lat": "d",
+      "long": "f",
+      "desc": "",
+      "img": ""
+  },
+      "2": {
+      "name": "Malaga",
+      "lat": "d",
+      "long": "f",
+      "desc": "",
+      "img": ""
+  },
+      "3": {
+      "name": "Alhambra",
+      "lat": "d",
+      "long": "f",
+      "desc": "",
+      "img": ""
+    }
+  ],
+}

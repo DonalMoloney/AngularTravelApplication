@@ -1,0 +1,25 @@
+{
+    "locations": [
+      "1": {
+      "name": "Ciudad de las Artes y las Ciencias",
+      "lat": "d",
+      "long": "f",
+      "desc": "",
+      "img": ""
+  },
+      "2": {
+      "name": "La Lonja de la Seda",
+      "lat": "d",
+      "long": "f",
+      "desc": "",
+      "img": ""
+  },
+      "3": {
+      "name": "Central Market",
+      "lat": "d",
+      "long": "f",
+      "desc": "",
+      "img": ""
+    }
+  ],
+}

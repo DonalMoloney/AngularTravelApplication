@@ -1,0 +1,25 @@
+{
+    "locations": [
+      "1": {
+      "name": "Picos de Europa National Park",
+      "lat": "d",
+      "long": "f",
+      "desc": "",
+      "img": ""
+  },
+      "2": {
+      "name": "Santander",
+      "lat": "d",
+      "long": "f",
+      "desc": "",
+      "img": ""
+  },
+      "3": {
+      "name": "Rioja Wine Region",
+      "lat": "d",
+      "long": "f",
+      "desc": "",
+      "img": ""
+    }
+  ],
+}

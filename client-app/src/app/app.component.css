@@ -5,9 +5,21 @@
   color: white;
 }
 
+
 /* Bottom left text */
 .bottom-left {
   position: absolute;
   bottom: 8px;
   left: 16px;
+}
+
+.currency_conversion_box{
+  display: flex;
+}
+
+.tag_center{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
 }

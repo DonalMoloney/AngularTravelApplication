@@ -1,0 +1,25 @@
+{
+    "locations": [
+      "1": {
+      "name": "Gaudi's Crypt",
+      "lat": "d",
+      "long": "f",
+      "desc": "",
+      "img": ""
+  },
+      "2": {
+      "name": "La Sagrada Familia",
+      "lat": "d",
+      "long": "f",
+      "desc": "",
+      "img": ""
+  },
+      "3": {
+      "name": "Tibidabo",
+      "lat": "d",
+      "long": "f",
+      "desc": "",
+      "img": ""
+    }
+  ],
+}
