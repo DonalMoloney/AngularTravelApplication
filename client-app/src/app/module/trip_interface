@@ -1,0 +1,9 @@
+import { Injectable } from '@angular/core';
+
+export interface TripInterface {
+  name: string,
+  lat: number,
+  long: number,
+  desc: string,
+  img: string
+}

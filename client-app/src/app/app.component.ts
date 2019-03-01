@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { CurrencyInterface } from './module/currency_interface';
+import { TripInterface } from './module/trip_interface';
+
 
 declare const google: any;
 
@@ -34,13 +36,15 @@ export class AppComponent {
 
         //todo make custom events such as what occured below for the item
         google.maps.event.addDomListener(mapDivB, 'click', function() {
-          window.alert('Map was clicked!');
-          let mapPropB;
-          map = new google.maps.Map(document.getElementById("googleMap"), mapPropB)
+          // window.alert('Map was clicked!');
+          // mapProp.append
+          // let mapPropB;
+          // map = new google.maps.Map(document.getElementById("googleMap"), mapPropB)
         });
 
         google.maps.event.addDomListener(mapDivM, 'click', function() {
           //TODO Implement
+          var JSONObj = new Object();
         });
         google.maps.event.addDomListener(mapDivV, 'click', function() {
           //TODO Implement
