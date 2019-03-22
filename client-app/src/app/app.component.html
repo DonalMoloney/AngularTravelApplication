@@ -91,12 +91,12 @@
       <div>
         <!-- Depending on the button this will be sent to the angular querry that will talk to the express back end -->
         <div class="ui seven item menu">
-          <a id="barcelona" class="item" (click)="makeRequest('b')">Barcelona</a>
-          <a id="madrid" class="item" (click)="makeRequest('m')">Madrid</a>
-          <a id="valencia" class="item" (click)="makeRequest('v')">Valencia</a>
-          <a id="southSpain" class="item" (click)="makeRequest('ss')">South Spain</a>
-          <a id="northSpain" class="item" (click)="makeRequest('ns')">North Spain</a>
-          <a class="item" (click)="clearScreen()">Clear</a>
+          <a id="barcelona" class="item" (click)="makeRequest('Barcelona')">Barcelona</a>
+          <a id="madrid" class="item" (click)="makeRequest('Madrid')">Madrid</a>
+          <a id="valencia" class="item" (click)="makeRequest('Valencia')">Valencia</a>
+          <a id="southSpain" class="item" (click)="makeRequest('SouthSpain')">South Spain</a>
+          <a id="northSpain" class="item" (click)="makeRequest('NorthSpain')">North Spain</a>
+          <a class="item" (click)="newScreen()">Clear</a>
           <a class="item" (click)="customTripModal()">Create Custom Trip</a>
         </div>
       </div>
@@ -105,7 +105,7 @@
     </div>
 
     <!-- Basic Modal allows them to create a combination of four cities -->
-    <div class="ui modal">
+    <div class="ui modal" >
       <div class="header">Create Custom Trip</div>
       <div class="ui 4 item menu">
         <a class="item">City 1</a>
